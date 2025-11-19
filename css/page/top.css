@@ -1,0 +1,160 @@
+@charset 'UTF-8';
+
+/* ------------------------------------ */
+/* pickup */
+/* ------------------------------------ */
+#pickup {
+    width: 100%;
+}
+.icon_donguri::before {
+    content: url(../../img/svg/donguri_3.svg);
+    width: 50px;
+    height: 50px;
+    padding-right: 20px;
+    display: inline-block;
+    overflow: visible;
+    animation: pulsingShake 2s infinite ease-in-out;
+}
+@keyframes pulsingShake {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+    10% {
+        transform: translateX(-2px) rotate(-2deg);
+    }
+    20% {
+        transform: translateX(2px) rotate(2deg);
+    }
+    30% {
+        transform: translateX(-2px) rotate(-2deg);
+    }
+    40% {
+        transform: translateX(2px) rotate(2deg);
+    }
+    50% {
+        transform: translateX(0) rotate(0deg);
+    }
+    100% {
+        transform: translateX(0) rotate(0deg);
+    }
+}
+
+#pickup .box {
+    margin-bottom: 40px;
+    padding: 4%;
+    /* padding-left: 4%;
+    padding-right: 4%; */
+    box-shadow: 0px 0px 20px -3px #cccccc;
+    transform: translateY(-30px);
+}
+
+#pickup .text_box {
+    width: 100%;
+    height: auto;
+    text-align: left;
+    /* padding-left: 20px; */
+}
+#pickup .text_box h2 {
+    text-align: left;
+    padding: 20px 0;
+    /* margin-left: 4%; */
+    font-size: 2.4rem;
+    position: relative;
+    padding-left: 20px;
+    display: inline-block;
+}
+
+#pickup .text_box h2::before {
+    content: "";
+    width: 4px;
+    height: 4rem;
+    background-color: #5f5434;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+
+#pickup .text_box p {
+    text-align: left;
+    padding: 20px 0 60px;
+}
+/* ------------------------------------ */
+/* charm */
+/* ------------------------------------ */
+#charm {
+    margin-bottom: 200px;
+}
+#charm .box {
+    /* flex-basis: 33.3%; */
+    border-radius: 5%;
+    box-shadow: 0px 0px 20px -3px #cccccc;
+}
+#charm .charm_text {
+    padding-bottom: 40px;
+}
+#charm .charm_img {
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+#charm .text_box {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+}
+
+#charm .text_box h2 {
+    text-align: left;
+    padding: 20px 0;
+    /* margin-left: 4%; */
+    font-size: 2.4rem;
+    position: relative;
+    padding-left: 20px;
+    display: inline-block;
+}
+#charm .text_box h2::before {
+    content: "";
+    width: 4px;
+    height: 4rem;
+    background-color: #5f5434;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    /* ------------------------------------ */
+    /* pickup */
+    /* ------------------------------------ */
+    #pickup .box {
+        display: flex;
+        gap: 80px;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: none;
+        margin-bottom: 60px;
+    }
+    #pickup img {
+        width: 400px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    #pickup .text_box p {
+        padding-bottom: 0;
+    }
+    /* ------------------------------------ */
+    /* charm */
+    /* ------------------------------------ */
+    #charm .charm_inner {
+        display: flex;
+        gap: 20px;
+    }
+    #charm .box {
+        flex-basis: 33.3%;
+    }
+}
+/* ========== min-width:1024px ========== */

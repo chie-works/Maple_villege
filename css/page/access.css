@@ -1,0 +1,113 @@
+@charset 'UTF-8';
+
+#access {
+    margin-top: 100px;
+    padding-bottom: 200px;
+}
+#access .section_title {
+    margin-bottom: 60px;
+}
+#access .access_inner {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+#access .access_inner .content {
+    margin-bottom: 80px;
+}
+#access .access_img {
+    width: 100%;
+    padding: 4%;
+    box-shadow: 0px 0px 20px -3px #cccccc;
+}
+#access .access_img img {
+    width: 100%;
+    height: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    height: auto;
+    object-fit: contain;
+}
+#access .access_img a {
+    margin-top: 20px;
+    text-align: right;
+}
+#access .access_img .icon {
+    width: 30px;
+    display: inline-block;
+}
+
+#access .access_inner h2 {
+    text-align: left;
+    padding: 20px 0 20px 20px;
+    font-size: 1.8rem;
+    position: relative;
+}
+
+#access .access_inner h2::before {
+    content: "";
+    width: 4px;
+    height: 4rem;
+    background-color: #5f5434;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+#access .access_inner h2::after {
+    content: "";
+    width: 3px;
+    height: 4rem;
+    background-color: #5f5434;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 8px;
+}
+
+#access .access_inner .access_description,
+#access .access_inner .access_list,
+#access .access_inner .contact_box {
+    text-align: left;
+}
+#access .access_inner .access_list li {
+    list-style: disc;
+}
+#access .access_inner .contact_box h3 {
+    font-size: 1.6rem;
+    padding: 10px 0;
+}
+
+@media screen and (min-width: 1024px) {
+    #access {
+        margin-top: 200px;
+    }
+    /* #access .access_inner {
+        border-left: 1px solid #5f5434;
+        border-right: 1px solid #5f5434;
+    } */
+    #access .section_title {
+        margin-bottom: 80px;
+    }
+
+    #access .content_title {
+        margin: 40px 0;
+    }
+    #access .access_inner h2 {
+        font-size: 2.4rem;
+        /* text-align: left; */
+        /* padding: 20px 0 20px 20px; */
+        /* position: relative; */
+    }
+
+    /* #access .access_inner img {
+        max-width: 600px;
+        object-fit: cover;
+        box-shadow: 0px 0px 20px -3px #cccccc;
+    } */
+}
+/* ========== min-width:1024px ========== */

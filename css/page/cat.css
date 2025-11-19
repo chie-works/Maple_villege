@@ -1,0 +1,93 @@
+@charset 'UTF-8';
+
+#category {
+    margin-top: 100px;
+    /* text-align: left; */
+    padding-bottom: 200px;
+}
+#category .section_title {
+    margin-bottom: 60px;
+    text-align: center;
+}
+#category .icon {
+    width: 50px;
+    margin: 0 auto;
+}
+#category .cat_inner {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+#category .cat_list {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+    margin-left: 20px;
+    border-bottom: 1px dotted #5f5434;
+}
+#category .cat_list:first-child {
+    border-top: 1px dotted #5f5434;
+}
+#category .cat_list .cat_icon {
+    flex-basis: 20%;
+}
+
+#category .cat_list .cat_title {
+    flex-basis: 80%;
+}
+
+#category .cat_list .icon {
+    display: inline-block;
+    animation: pulsingShake 2s infinite ease-in-out;
+}
+
+@keyframes pulsingShake {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+    10% {
+        transform: translateX(-2px) rotate(-2deg);
+    }
+    20% {
+        transform: translateX(2px) rotate(2deg);
+    }
+    30% {
+        transform: translateX(-2px) rotate(-2deg);
+    }
+    40% {
+        transform: translateX(2px) rotate(2deg);
+    }
+    50% {
+        transform: translateX(0) rotate(0deg);
+    } /* ここで一度止まる */
+    100% {
+        transform: translateX(0) rotate(0deg);
+    } /* しばらく静止 */
+}
+
+@media screen and (min-width: 1024px) {
+    #category {
+        margin-top: 180px;
+    }
+    #category .cat_inner {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    #category .cat_list {
+        flex-basis: 45%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #category .cat_list {
+        border-top: 1px dotted #5f5434;
+    }
+}
+/* ========== min-width:1024px ========== */
