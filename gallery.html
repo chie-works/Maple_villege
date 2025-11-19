@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sunday Flower</title>
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet" />
+        <!-- lightbox2 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css" />
+        <!-- css -->
+        <link rel="stylesheet" href="css/common/reset.css" />
+        <link rel="stylesheet" href="css/common/const.css" />
+        <link rel="stylesheet" href="css/common/common.css" />
+        <link rel="stylesheet" href="css/page/under.css" />
+        <link rel="stylesheet" href="css/page/gallery.css" />
+    </head>
+
+    <body id="top">
+        <!-- ============================ -->
+        <!-- ヘッダー -->
+        <!-- ============================ -->
+        <header>
+            <div class="header_inner">
+                <!-- ロゴ -->
+                <div class="logo_box">
+                    <a href="index.html">
+                        <h1>
+                            <img class="logo" src="img/icon/logo.svg" alt="" />
+                        </h1>
+                    </a>
+                </div>
+                <!-- ナビ -->
+                <nav>
+                    <ul>
+                        <li class="nav_home"><a href="index.html#top">HOME</a></li>
+                        <li class="nav_about"><a href="index.html#about">ABOUT</a></li>
+                        <li class="nav_shop"><a href="index.html#shop">SHOP</a></li>
+                        <li class="nav_item"><a href="item.html">ITEM</a></li>
+                        <li class="nav_gallery"><a href="gallery.html">GALLERY</a></li>
+                        <li class="nav_news"><a href="news.html">NEWS</a></li>
+                        <li class="nav_contact"><a href="contact.html">CONTACT</a></li>
+                        <li>
+                            <div class="icon_box">
+                                <a href="#"><img src="img/icon/insta.svg" alt="" /></a>
+                                <a href="#"><img src="img/icon/x.svg" alt="" /></a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- ハンバーガーメニュー -->
+                <div class="hum">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </header>
+
+        <!-- ============================ -->
+        <!-- GALLERY メイン -->
+        <!-- ============================ -->
+        <main class="gallery under">
+            <!-- top画像 -->
+            <div>
+                <div class="top_box">
+                    <img src="img/top/gallery_top.jpg" alt="" />
+                    <h1 class="top_title">GALLERY</h1>
+                </div>
+                <div class="top_text">
+                    <p>当店がこれまでに手がけた会場の装飾やウェディングブーケの紹介ページです。</p>
+                </div>
+            </div>
+
+            <div class="tab_container">
+                <input type="radio" id="flower_display" name="tab" checked />
+                <label for="flower_display"><span>Flower Display</span></label>
+                <input type="radio" id="wedding" name="tab" />
+                <label for="wedding"><span>Wedding</span></label>
+            </div>
+
+            <!--------------------------Flower  ------------------------------------------------>
+            <section id="flower_display_contents" class="tab_contents">
+                <h2 class="title">Flower Display</h2>
+                <!--画像のリスト-->
+
+                <div class="gallery_box">
+                    <a href="img/gallery/gallery_01.png" data-lightbox="img-group1" class="box1">
+                        <img src="img/gallery/gallery_01.png" alt="" />
+                    </a>
+                    <a href="img/gallery/gallery_02.png" data-lightbox="img-group1">
+                        <img src="img/gallery/gallery_02.png" alt="" />
+                    </a>
+                    <a href="img/gallery/gallery_03.png" data-lightbox="img-group1">
+                        <img src="img/gallery/gallery_03.png" alt="" />
+                    </a>
+                    <a href="img/gallery/gallery_04.png" data-lightbox="img-group1">
+                        <img src="img/gallery/gallery_04.png" alt="" />
+                    </a>
+                    <a href="img/gallery/gallery_05.png" data-lightbox="img-group1">
+                        <img src="img/gallery/gallery_05.png" alt="" />
+                    </a>
+                    <a href="img/gallery/gallery_06.png" data-lightbox="img-group1">
+                        <img src="img/gallery/gallery_06.png" alt="" />
+                    </a>
+                    <a href="img/gallery/gallery_07.png" data-lightbox="img-group1" class="box2">
+                        <img src="img/gallery/gallery_07.png" alt="" />
+                    </a>
+                    <a href="img/gallery/gallery_08.png" data-lightbox="img-group1">
+                        <img src="img/gallery/gallery_08.png" alt="" />
+                    </a>
+                    <a href="img/gallery/gallery_09.png" data-lightbox="img-group1">
+                        <img src="img/gallery/gallery_09.png" alt="" />
+                    </a>
+                    <a href="img/gallery/gallery_10.png" data-lightbox="img-group1">
+                        <img src="img/gallery/gallery_10.png" alt="" />
+                    </a>
+                    <a href="img/gallery/gallery_11.png" data-lightbox="img-group1" class="box3">
+                        <img src="img/gallery/gallery_11.png" alt="" />
+                    </a>
+                    <a href="img/gallery/gallery_12.png" data-lightbox="img-group1">
+                        <img src="img/gallery/gallery_12.png" alt="" />
+                    </a>
+                    <a href="img/gallery/gallery_13.png" data-lightbox="img-group1">
+                        <img src="img/gallery/gallery_13.png" alt="" />
+                    </a>
+                    <a href="img/gallery/gallery_14.png" data-lightbox="img-group1">
+                        <img src="img/gallery/gallery_14.png" alt="" />
+                    </a>
+                </div>
+            </section>
+            <!--------------------------Wedding  ------------------------------------------------>
+            <section id="wedding_contents" class="tab_contents">
+                <h2 class="title">Wedding</h2>
+                <!--画像のリスト-->
+                <div class="gallery_box">
+                    <a href="img/gallery/gallery_21.png" data-lightbox="img-group2">
+                        <img src="img/gallery/gallery_21.png" alt="" />
+                    </a>
+                    <a href="img/gallery/gallery_22.png" data-lightbox="img-group2">
+                        <img src="img/gallery/gallery_22.png" alt="" />
+                    </a>
+                    <a href="img/gallery/gallery_23.png" data-lightbox="img-group2" class="box4">
+                        <img src="img/gallery/gallery_23.png" alt="" />
+                    </a>
+                    <a href="img/gallery/gallery_24.png" data-lightbox="img-group2" class="box5">
+                        <img src="img/gallery/gallery_24.png" alt="" />
+                    </a>
+                    <a href="img/gallery/gallery_25.png" data-lightbox="img-group2">
+                        <img src="img/gallery/gallery_25.png" alt="" />
+                    </a>
+                    <a href="img/gallery/gallery_26.png" data-lightbox="img-group2">
+                        <img src="img/gallery/gallery_26.png" alt="" />
+                    </a>
+                    <a href="img/gallery/gallery_27.png" data-lightbox="img-group2">
+                        <img src="img/gallery/gallery_27.png" alt="" />
+                    </a>
+                    <a href="img/gallery/gallery_28.png" data-lightbox="img-group2">
+                        <img src="img/gallery/gallery_28.png" alt="" />
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <!-- ============================ -->
+        <!-- フッター -->
+        <!-- ============================ -->
+        <footer>
+            <div class="footer_inner">
+                <!-- ロゴ -->
+                <div class="logo_box">
+                    <a href="index.html">
+                        <h1>
+                            <img class="logo" src="img/icon/logo_w.svg" alt="" />
+                        </h1>
+                    </a>
+                </div>
+                <!-- ナビ -->
+                <nav>
+                    <ul>
+                        <li class="nav_home"><a href="index.html#top">HOME</a></li>
+                        <li class="nav_about"><a href="index.html#about">ABOUT</a></li>
+                        <li class="nav_shop"><a href="index.html#shop">SHOP</a></li>
+                        <li class="nav_item"><a href="item.html">ITEM</a></li>
+                        <li class="nav_gallery"><a href="gallery.html">GALLERY</a></li>
+                        <li class="nav_news"><a href="news.html">NEWS</a></li>
+                        <li class="nav_contact"><a href="contact.html">CONTACT</a></li>
+                        <li>
+                            <div class="icon_box">
+                                <a href="#"><img src="img/icon/insta_w.svg" alt="" /></a>
+                                <a href="#"><img src="img/icon/x_w.svg" alt="" /></a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+
+        <!-- jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- lightbox2 -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+        <!-- js -->
+        <script src="js/main.js"></script>
+        <script src="js/gallery.js"></script>
+    </body>
+</html>

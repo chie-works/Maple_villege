@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sunday Flower</title>
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet" />
+        <!-- Swiperのcss -->
+        <link rel=" stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <!-- slickのCSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- splideのCSS -->
+        <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet" />
+        <!-- css -->
+        <link rel="stylesheet" href="css/common/reset.css" />
+        <link rel="stylesheet" href="css/common/const.css" />
+        <link rel="stylesheet" href="css/common/common.css" />
+        <link rel="stylesheet" href="css/page/top.css" />
+        <link rel="stylesheet" href="css/page/news.css" />
+    </head>
+
+    <body id="top">
+        <!-- ============================ -->
+        <!-- ヘッダー -->
+        <!-- ============================ -->
+        <header>
+            <div class="header_inner">
+                <!-- ロゴ -->
+                <div class="logo_box">
+                    <a href="index.html">
+                        <h1>
+                            <img class="logo" src="img/icon/logo.svg" alt="" />
+                        </h1>
+                    </a>
+                </div>
+                <!-- ナビ -->
+                <nav>
+                    <ul>
+                        <li class="nav_home"><a href="#top">HOME</a></li>
+                        <li class="nav_about"><a href="#about">ABOUT</a></li>
+                        <li class="nav_shop"><a href="#shop">SHOP</a></li>
+                        <li class="nav_item"><a href="item.html">ITEM</a></li>
+                        <li class="nav_gallery"><a href="gallery.html">GALLERY</a></li>
+                        <li class="nav_news"><a href="news.html">NEWS</a></li>
+                        <li class="nav_contact"><a href="contact.html">CONTACT</a></li>
+                        <li>
+                            <div class="icon_box">
+                                <a href="#"><img src="img/icon/insta.svg" alt="" /></a>
+                                <a href="#"><img src="img/icon/x.svg" alt="" /></a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- ハンバーガーメニュー -->
+                <div class="hum">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </header>
+
+        <!-- ============================ -->
+        <!-- メイン -->
+        <!-- ============================ -->
+        <main>
+            <!-- ------------------キービジュアル------------------ -->
+            <div class="mv">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide01">
+                            <div class="swiper-slide__item">
+                                <img src="img/top/top_1.jpg" alt="" />
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide01">
+                            <div class="swiper-slide__item">
+                                <img src="img/top/top_2.jpg" alt="" />
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide01">
+                            <div class="swiper-slide__item">
+                                <img src="img/top/top_3.jpg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shop Name -->
+                <div class="shop_name">
+                    <span>Flower Shop</span>
+                    <h1>Sunday Flower</h1>
+                </div>
+
+                <!-- Scroll Down -->
+                <div class="scroll">
+                    <span class="scroll_text">Scroll</span>
+                </div>
+            </div>
+
+            <!-- ------------------0．NEWS(最新3件)------------------ -->
+            <section class="news bg_color" id="news">
+                <h1 class="center">最新のお知らせ</h1>
+                <div class="sect_inner">
+                    <div class="center">
+                        <a href="#">
+                            <dl class="news_box">
+                                <dt class="news_date">2025.05.20</dt>
+                                <dd class="news_text">フラワーアレンジメントのワークショップのご参加ありがとうございました。</dd>
+                            </dl>
+                        </a>
+                        <a href="#">
+                            <dl class="news_box">
+                                <dt class="news_date">2025.05.12</dt>
+                                <dd class="news_text">フラワーアレンジメントのワークショップを開催いたします。</dd>
+                            </dl>
+                        </a>
+                        <a href="#">
+                            <dl class="news_box">
+                                <dt class="news_date">2025.04.15</dt>
+                                <dd class="news_text">プリザーブドフラワーなどのギフトのお取り扱いを開始しました。</dd>
+                            </dl>
+                        </a>
+                    </div>
+                    <div class="top_news right">
+                        <a class="page_link right" href="item.html">
+                            VIEW MORE
+                            <span>＞＞</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ------------------１．ABOUT------------------ -->
+            <section class="about" id="about">
+                <div class="anime_box">
+                    <h2 class="anime-up">ABOUT</h2>
+                    <p>当店について</p>
+                </div>
+                <div class="sect_inner">
+                    <div class="desc">
+                        <div class="about_text">
+                            <p class="left">今年4月に吉祥寺駅徒歩4分の所にオープンしました。</p>
+                            <p class="left">チューリップやバラといった定番のお花や、季節のお花も豊富に取り扱っております。</p>
+                            <p class="left">生花以外にもプリザーブドフラワーやソープフラワーといったギフトやウェディングブーケのご注文も承っておりますので、お気軽にお立ち寄りください。</p>
+                            <p class="center">営業時間 ９：００～２０：００</p>
+                            <p class="center">月曜定休</p>
+                        </div>
+                    </div>
+                    <!-- slider -->
+                    <div class="image">
+                        <ul class="slider">
+                            <li><img src="img/about/about_01.jpg" alt="" /></li>
+                            <li><img src="img/about/about_02.jpg" alt="" /></li>
+                            <li><img src="img/about/about_03.png" alt="" /></li>
+                            <li><img src="img/about/about_04.png" alt="" /></li>
+                            <li><img src="img/about/about_05.png" alt="" /></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ------------------２．shop------------------ -->
+            <section class="shop bg_color" id="shop">
+                <div class="anime_box">
+                    <h2 class="anime-up">SHOP</h2>
+                    <p>店舗情報</p>
+                </div>
+                <div class="sect_inner reverse">
+                    <div class="desc">
+                        <div class="shop_text">
+                            <h3 class="left">Sunday Flower</h3>
+                            <p class="post left">123-4567</p>
+                            <p class="adr left">東京都武蔵野市XXX1-2-3</p>
+                            <p class="tel left">044-123-4567</p>
+                            <p class="fax left">044-123-4567</p>
+                            <p class="mail left">email : sample@xxxx.com</p>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="img/other/map_1.svg" alt="Sunday Flower 地図" />
+                    </div>
+                </div>
+            </section>
+
+            <!--------下部の画像-------->
+            <div class="bg_placeholder"></div>
+
+            <!-- ------------------３．ITEM------------------ -->
+            <section class="item" id="item">
+                <div class="anime_box">
+                    <h2 class="anime-up">ITEM</h2>
+                    <p>お取り扱い商品</p>
+                </div>
+                <div class="sect_inner">
+                    <div class="desc">
+                        <div class="item_text">
+                            <p class="left">当店では、チューリップやバラといった定番のお花や、季節のお花も豊富に取り扱っております。</p>
+                            <p class="left">また、生花以外にもプリザーブドフラワーやソープフラワーといったギフトやウェディングブーケのご注文も承っておりますので、お気軽にお立ち寄りください。</p>
+                        </div>
+                        <div class="right">
+                            <a class="page_link right" href="item.html">
+                                VIEW MORE
+                                <span>＞＞</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 商品スライダー(splide) -->
+                <div class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img src="img/top/flower_01.jpg" alt="" />
+                            </li>
+                            <li class="splide__slide">
+                                <img src="img/top/flower_02.jpg" alt="" />
+                            </li>
+                            <li class="splide__slide">
+                                <img src="img/top/flower_03.jpg" alt="" />
+                            </li>
+                            <li class="splide__slide">
+                                <img src="img/top/flower_04.jpg" alt="" />
+                            </li>
+                            <li class="splide__slide">
+                                <img src="img/top/flower_05.jpg" alt="" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ------------------４．GALLERY------------------ -->
+            <section class="gallery" id="gallery">
+                <div class="anime_box">
+                    <h2 class="anime-up">GALLERY</h2>
+                    <p>ギャラリー</p>
+                </div>
+                <div class="sect_inner reverse">
+                    <div class="desc">
+                        <div class="gallery_text">
+                            <p class="left">当店がこれまでに手がけた、会場の装飾やウェディングブーケの紹介ページです。</p>
+                        </div>
+                        <div class="right">
+                            <a class="page_link right" href="gallery.html">
+                                VIEW MORE
+                                <span>＞＞</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <a href="gallery.html" class="image_link">
+                            <img src="img/top/gallery_top.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ------------------５．CONTACT------------------ -->
+            <section class="contact" id="contact">
+                <div class="anime_box">
+                    <h2 class="anime-up">CONTACT</h2>
+                    <p>お問い合わせ</p>
+                </div>
+                <div class="sect_inner">
+                    <div class="desc">
+                        <div>
+                            <h3 class="contact_tel">お電話でのお問い合わせはこちら</h3>
+                            <p>044-123-4567</p>
+                            <p>10:00～17:00</p>
+                        </div>
+                        <div>
+                            <h3 class="contact_mail">メールでのお問い合わせはこちら</h3>
+                            <a class="btn" href="contact.html">お問い合わせフォーム</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--------下部の画像-------->
+            <div class="bg"></div>
+
+            <!-- TOPへ戻る -->
+            <div id="to_top"><a href="#top">TOPへ</a></div>
+        </main>
+
+        <!-- ============================ -->
+        <!-- フッター -->
+        <!-- ============================ -->
+        <footer>
+            <div class="footer_inner">
+                <!-- ロゴ -->
+                <div class="logo_box">
+                    <a href="index.html">
+                        <h1>
+                            <img class="logo" src="img/icon/logo_w.svg" alt="" />
+                        </h1>
+                    </a>
+                </div>
+                <!-- ナビ -->
+                <nav>
+                    <ul>
+                        <li class="nav_home"><a href="#top">HOME</a></li>
+                        <li class="nav_about"><a href="#about">ABOUT</a></li>
+                        <li class="nav_shop"><a href="#shop">SHOP</a></li>
+                        <li class="nav_item"><a href="item.html">ITEM</a></li>
+                        <li class="nav_gallery"><a href="gallery.html">GALLERY</a></li>
+                        <li class="nav_contact"><a href="contact.html">CONTACT</a></li>
+                        <li class="nav_news"><a href="news.html">NEWS</a></li>
+                        <li>
+                            <div class="icon_box">
+                                <a href="#"><img src="img/icon/insta_w.svg" alt="" /></a>
+                                <a href="#"><img src="img/icon/x_w.svg" alt="" /></a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <span>&copy;Sunday Flower</span>
+            </div>
+        </footer>
+
+        <!-- jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Swiperのjs -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <!-- jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- slickのJavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- splideのjs -->
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+        <!-- js -->
+        <script src="js/main.js"></script>
+        <script src="js/top.js"></script>
+    </body>
+</html>

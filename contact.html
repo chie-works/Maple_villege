@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sunday Flower</title>
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet" />
+        <!-- css -->
+        <link rel="stylesheet" href="css/common/reset.css" />
+        <link rel="stylesheet" href="css/common/const.css" />
+        <link rel="stylesheet" href="css/common/common.css" />
+        <link rel="stylesheet" href="css/page/under.css" />
+        <link rel="stylesheet" href="css/page/contact.css" />
+    </head>
+
+    <body id="top">
+        <!-- ============================ -->
+        <!-- ヘッダー -->
+        <!-- ============================ -->
+        <header>
+            <div class="header_inner">
+                <!-- ロゴ -->
+                <div class="logo_box">
+                    <a href="index.html">
+                        <h1>
+                            <img class="logo" src="img/icon/logo.svg" alt="" />
+                        </h1>
+                    </a>
+                </div>
+                <!-- ナビ -->
+                <nav>
+                    <ul>
+                        <li class="nav_home"><a href="index.html#top">HOME</a></li>
+                        <li class="nav_about"><a href="index.html#about">ABOUT</a></li>
+                        <li class="nav_shop"><a href="index.html#shop">SHOP</a></li>
+                        <li class="nav_item"><a href="item.html">ITEM</a></li>
+                        <li class="nav_gallery"><a href="gallery.html">GALLERY</a></li>
+                        <li class="nav_news"><a href="news.html">NEWS</a></li>
+                        <li class="nav_contact"><a href="contact.html">CONTACT</a></li>
+                        <li>
+                            <div class="icon_box">
+                                <a href="#"><img src="img/icon/insta.svg" alt="" /></a>
+                                <a href="#"><img src="img/icon/x.svg" alt="" /></a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- ハンバーガーメニュー -->
+                <div class="hum">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </header>
+
+        <!-- ============================ -->
+        <!-- CONTACT メイン -->
+        <!-- ============================ -->
+        <main class="contact under">
+            <!-- top画像 -->
+            <div>
+                <div class="top_box">
+                    <img src="img/top/contact_top.png" alt="" />
+                    <h1 class="top_title">CONTACT</h1>
+                </div>
+                <div class="top_text">
+                    <p>以下のフォームよりお問い合わせください</p>
+                </div>
+            </div>
+
+            <section>
+                <div class="center">
+                    <!-- 入力フォーム -->
+                    <form class="form" action="" method="post">
+                        <h2>お問い合わせ</h2>
+                        <dl class="form_box">
+                            <dt>
+                                <label for="name"><span class="required">必須</span>お名前</label>
+                            </dt>
+                            <dd><input type="text" id="name" name="name" value="" placeholder="東京  花子" required /></dd>
+                        </dl>
+                        <dl class="form_box">
+                            <dt>
+                                <label for="kana"><span class="required">必須</span>カナ</label>
+                            </dt>
+                            <dd><input type="text" id="kana" name="kana" value="" placeholder="トウキョウ  ハナコ" required /></dd>
+                        </dl>
+                        <dl class="form_box">
+                            <dt>
+                                <label for="email"><span class="required">必須</span>メールアドレス</label>
+                            </dt>
+                            <dd><input type="email" id="email" name="email" value="" placeholder="mail@xxxx.com" data-conv-half-alphanumeric="true" required /></dd>
+                        </dl>
+                        <dl class="form_box">
+                            <dt>
+                                <label for="phone"><span class="required">必須</span>電話番号</label>
+                            </dt>
+                            <dd><input type="tel" id="phone" name="phone" value="" placeholder="例）0312345678" required /></dd>
+                        </dl>
+                        <dl class="form_box">
+                            <dt>
+                                <label for="detail"><span class="required">必須</span>お問い合わせ内容</label>
+                            </dt>
+                            <dd><textarea id="detail" name="detail" rows="5"></textarea></dd>
+                        </dl>
+                        <input type="submit" class="btn" value="送信する" />
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!-- ============================ -->
+        <!-- フッター -->
+        <!-- ============================ -->
+        <footer>
+            <div class="footer_inner">
+                <!-- ロゴ -->
+                <div class="logo_box">
+                    <a href="index.html">
+                        <h1>
+                            <img class="logo" src="img/icon/logo_w.svg" alt="" />
+                        </h1>
+                    </a>
+                </div>
+                <!-- ナビ -->
+                <nav>
+                    <ul>
+                        <li class="nav_home"><a href="index.html#top">HOME</a></li>
+                        <li class="nav_about"><a href="index.html#about">ABOUT</a></li>
+                        <li class="nav_shop"><a href="index.html#shop">SHOP</a></li>
+                        <li class="nav_item"><a href="item.html">ITEM</a></li>
+                        <li class="nav_gallery"><a href="gallery.html">GALLERY</a></li>
+                        <li class="nav_news"><a href="news.html">NEWS</a></li>
+                        <li class="nav_contact"><a href="contact.html">CONTACT</a></li>
+                        <li>
+                            <div class="icon_box">
+                                <a href="#"><img src="img/icon/insta_w.svg" alt="" /></a>
+                                <a href="#"><img src="img/icon/x_w.svg" alt="" /></a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+
+        <!-- jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- js -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
